@@ -4,4 +4,11 @@
 "sources": ["media.scss"],
 "names": [],
 "file": "media.css"
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "media.scss"
+    ],
+    "names": [],
+    "file": "media.css"
 }
