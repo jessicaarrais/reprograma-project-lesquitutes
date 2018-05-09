@@ -1,1 +1,13 @@
+<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["cakes.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;EACA;EACA,QAnBY;;;AAsBd;EACE;EACA;EACA;EACA;EACA,QA3BY;;;AA8Bd;EACE;EACA;EACA;EACA;EACA,QAnCY;;;AAsCd;EACE;EACA,QAxCY","file":"cakes.css"}
+=======
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "cakes.scss"
+    ],
+    "names": [],
+    "file": "cakes.css"
+}
+>>>>>>> 81f10c7c1b39949fb02e5c1380ef196ed20564fc
