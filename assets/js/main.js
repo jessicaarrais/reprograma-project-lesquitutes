@@ -1,3 +1,12 @@
+function onClickCategory (productCategory) {
+  if ( productCategory === 'cakes') {
+    window.location.href = 'cakes.html';
+  }
+  if ( productCategory === 'desserts') {
+    window.location.href = 'desserts.html';
+  }
+}
+
 function onClickProductType (productCategory, productType) {
   console.log(productType, productCategory);
 
