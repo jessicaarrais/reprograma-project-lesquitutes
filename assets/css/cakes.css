@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .les-cards-products {
   max-width: 1000px;
   margin: 0 auto;
@@ -7,15 +6,12 @@
   grid-gap: 1em;
 }
 
-.card-img {
-  background-size: cover;
-}
-
 .les-card-double1 {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 2;
+  background-size: cover;
   height: 380px;
 }
 
@@ -24,14 +20,16 @@
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
+  background-size: cover;
   height: 380px;
 }
 
 .les-card-double3 {
   grid-column-start: 3;
   grid-column-end: 5;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  background-size: cover;
   height: 380px;
 }
 
@@ -41,6 +39,3 @@
 }
 
 /*# sourceMappingURL=cakes.css.map */
-=======
-/* No CSS *//*# sourceMappingURL=cakes.css.map */
->>>>>>> 81f10c7c1b39949fb02e5c1380ef196ed20564fc
