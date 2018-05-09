@@ -1,1 +1,129 @@
+/* General Styles
+---------------------------------------*/
+body {
+  margin: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #606060;
+  background-color: #fafafa; }
+
+h2 {
+  margin: 10px 0; }
+
+h5 {
+  padding: 10px; }
+
+section {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0; }
+  section div {
+    padding: 20px 0; }
+  section .container {
+    width: 1000px; }
+    section .container .linha {
+      display: flex;
+      justify-content: center;
+      align-content: flex-start; }
+      section .container .linha div {
+        width: 400px;
+        padding: 20px 20px; }
+
+@media (max-width: 768px) {
+  section .container {
+    width: 100%; }
+    section .container .linha {
+      justify-content: flex-start;
+      flex-direction: column; }
+      section .container .linha div {
+        width: 100%;
+        padding: 20px 0; } }
+/* Media Styles
+---------------------------------------*/
+.quote {
+  border-left: 5px solid #cccccc;
+  padding-left: 15px;
+  width: 100%; }
+  .quote p:first-child {
+    font-style: italic; }
+  .quote small {
+    font-size: 80%;
+    color: #777; }
+
+/* Revista Styles
+---------------------------------------*/
+.sobre-revista {
+  background-color: #dddddd; }
+  .sobre-revista a {
+    color: #EF4A81; }
+
+/* GNT Styles
+---------------------------------------*/
+/* Coluna Styles
+---------------------------------------*/
+.sobre-coluna {
+  background-color: #666666;
+  color: #ffffff; }
+
+.media-column-img {
+  display: flex;
+  justify-content: flex-end; }
+
+@media (max-width: 768px) {
+  .media-column-img {
+    justify-content: center; } }
+/* FAQ Styles
+---------------------------------------*/
+/* Footer Styles
+---------------------------------------*/
+footer {
+  width: 100%;
+  background-color: #4a4a4a;
+  color: #ffffff;
+  padding: 10px 0; }
+  footer ul {
+    margin: 0;
+    list-style-type: none;
+    text-align: left; }
+  footer .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 60px; }
+  footer .logo-footer img {
+    width: 90px; }
+  footer .btn-footer {
+    padding: 10px 25px;
+    background-color: #EF4A81;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 4px; }
+  footer .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .social-media img {
+      height: 30px;
+      padding: 0 10px; }
+
+.footnote {
+  text-align: center;
+  background-color: #333333;
+  width: 100%;
+  margin: 0;
+  padding: 5px 0;
+  font-size: 9px; }
+
+@media (max-width: 768px) {
+  footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; } }
+
+/*# sourceMappingURL=media.css.map */
+
 /* No CSS *//*# sourceMappingURL=media.css.map */
