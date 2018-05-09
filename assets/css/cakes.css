@@ -1,5 +1,3 @@
-$card-height: 380px;
-
 .les-cards-products {
   max-width: 1000px;
   margin: 0 auto;
@@ -8,13 +6,16 @@ $card-height: 380px;
   grid-gap: 1em;
 }
 
+.card-img {
+  background-size: cover;
+}
+
 .les-card-double1 {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 2;
-  background-size: cover;
-  height: $card-height;
+  height: 380px;
 }
 
 .les-card-double2 {
@@ -22,20 +23,20 @@ $card-height: 380px;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-size: cover;
-  height: $card-height;
+  height: 380px;
 }
 
 .les-card-double3 {
   grid-column-start: 3;
   grid-column-end: 5;
-  grid-row-start: 6;
-  grid-row-end: 7;
-  background-size: cover;
-  height: $card-height;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  height: 380px;
 }
 
 .les-card-single {
   background-size: cover;
-  height: $card-height;
+  height: 380px;
 }
+
+/*# sourceMappingURL=cakes.css.map */
