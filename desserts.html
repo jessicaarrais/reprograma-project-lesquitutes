@@ -2,18 +2,38 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/desserts.scss" />
-    <script src="assets/js/main.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/media.scss" />
+  <link rel="stylesheet" href="assets/css/desserts.css">
+  <script src="assets/js/main.js"></script>
+  <title>Les Quitutes</title>
 </head>
-
 <body>
+  <header>
+    <h1 class="title-products">Doces</h1>
+  </header>
 
+
+  <button class="button-product" type="button" value="desserts-array" name="cupcake" onclick="onClickProduct(this.value, this.name)">Cupcakes</button>
+
+  <button class="button-product" type="button" value="desserts-array" name="desserts" onclick="onClickProduct(this.value, this.name)">Doces</button>
+
+  <button class="button-product" type="button" value="desserts-array" name="souvenir" onclick="onClickProduct(this.value, this.name)">Lembrancinhas</button>
+
+  <button class="button-product" type="button" value="cakes-array" name="decorated" onclick="onClickProduct(this.value, this.name)">Bolos Decorados</button>
+
+  <button class="button-product" type="button" value="cakes-array" name="naked-cake" onclick="onClickProduct(this.value, this.name)">Naked Cakes</button>
+
+  <button class="button-product" type="button" value="cakes-array" name="american-pasta" onclick="onClickProduct(this.value, this.name)">Bolos Pasta Americana</button>
+
+  <div class="cards-products">
+
+  </div>
+  <script src="assets/js/main.js" charset="utf-8"></script>
 </body>
-
 </html>
