@@ -1,7 +1,3 @@
-const imported = document.createElement('script');
-imported.src = 'assets/js/products.js';
-document.head.appendChild(imported);
-
 let divCardsProducts = document.querySelector('.cards-products');
 
 function onClickProduct (buttonValue, buttonName) {
@@ -29,22 +25,24 @@ function constructorHTML (array, buttonName) {
     if (element.brief !== '') {
       divCard.innerHTML = `
         <div class='card-double'>
-          <img style="width: 50px" class="card-img" src=${element.src} alt=${element.alt}>
-          <p>${element.alt}</p>
+          <img style="width: 50px" class="card-img" src=${element.src} alt=${element.description}>
+          <p>${element.description}</p>
           <p>${element.brief}</p>
+          ${element.tags.map(tag => `<p>${tag}</p>`).join('')}
         </div>
       `;
     } else {
       divCard.innerHTML = `
         <div class='card-single'>
-          <img style="width: 50px" class="card-img" src=${element.src} alt=${element.alt}>
-          <p>${element.alt}</p>
+          <img style="width: 50px" class="card-img" src=${element.src} alt=${element.description}>
+          <p>${element.description}</p>
+          ${element.tags.map(tag => `<p>${tag}</p>`).join('')}
         </div>
       `;
     }
 
-
-
     divCardsProducts.appendChild(divCard);
   });
 }
+
+constructorHTML(dessertsArray, 'cupcake');
