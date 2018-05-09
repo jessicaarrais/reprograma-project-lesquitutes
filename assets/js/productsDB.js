@@ -1,4 +1,4 @@
-let dessertsArray = [
+let desserts = [
   {
     type: "cupcake",
     description: "Cupcake de abóbora",
@@ -35,70 +35,70 @@ let dessertsArray = [
     tags: [],
   },
   {
-    type: "desserts",
+    type: "dessert",
     description: "Red velvet no pote",
     src:"assets/img/IMG_4535.JPG",
     brief: '',
     tags: ['qsd'],
   },
   {
-    type: "desserts",
+    type: "dessert",
     description: "Biscoito decorado",
     src:"assets/img/IMG_4535.JPG",
     brief: '',
     tags: [],
   },
   {
-    type: "desserts",
+    type: "dessert",
     description: "Caixa de docinhos",
     src:"assets/img/IMG_4535.JPG",
     brief: '',
     tags: [],
   },
   {
-    type: "desserts",
+    type: "dessert",
     description: "Saquinho de cookies de chocolate",
     src:"assets/img/IMG_4535.JPG",
     brief: '',
     tags: [],
   },
   {
-    type: "desserts",
+    type: "dessert",
     description: "Brigadeiro com chocolate",
     src:"assets/img/IMG_4535.JPG",
     brief: '',
     tags: [],
   },
   {
-    type: "desserts",
+    type: "dessert",
     description: "Brigadeiro de churros belga",
     src:"assets/img/IMG_4535.JPG",
     brief: '',
     tags: [],
   },
   {
-    type: "desserts",
+    type: "dessert",
     description: "Brigadeiro no copinho",
     src:"assets/img/IMG_4535.JPG",
     brief: '',
     tags: ['diet'],
   },
   {
-    type: "desserts",
+    type: "dessert",
     description: "Brigadeiro de café no copinho",
     src:"assets/img/IMG_4535.JPG",
     brief: '',
     tags: ['diet'],
   },
   {
-    type: "desserts",
+    type: "dessert",
     description: "Creme de oreo no copinho",
     src:"assets/img/IMG_4535.JPG",
     brief: '',
     tags: [],
   },
   {
-    type: "desserts",
+    type: "dessert",
     description: "Beijinho no copinho",
     src:"assets/img/IMG_4535.JPG",
     brief: '',
@@ -106,7 +106,7 @@ let dessertsArray = [
   },
 ];
 
-let cakesArray = [
+let cakes = [
   {
     type: "decorated",
     description: "Bolo decorado Red Velvet com creme de cream cheese e morangos",
@@ -217,7 +217,7 @@ let cakesArray = [
     description: "Bolo de chocolate com kiwi e morangos",
     src: "assets/img/IMG_4535.JPG",
     brief: '',
-    tags: ['diet', 'qsj'],
+    tags: ['diet','qsj'],
   },
   {
     type: "american-pasta",
