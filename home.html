@@ -7,13 +7,40 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/media.scss" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/home.scss" />
 </head>
 
 <body>
-    <nav>
-        
+    <nav class="navbar navbar-default navbar-expand-md navbar-fixed-top">
+        <!-- logo -->
+        <a href="home.html" class="navbar-brand">
+            <img src="http://via.placeholder.com/90x90" alt="logo-le-quitutes">
+        </a>
+
+        <!-- sanduíche -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarText"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- conteúdo do sanduíche -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="cakes.html">Bolos
+                        <span class="sr-only"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="desserts.html">Doces</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="media.html">Sobre nós</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+
     <div class="container fluid text-center">
         <div class="row">
             <div id="quitutes" class="carousel slide" data-ride="carousel">
@@ -66,15 +93,15 @@
     <h3>
         <div class="column-three">
             <div class="three-block">
-                <img src="#" alt="foto1" class="column-three-img">
+                <img src="http://via.placeholder.com/300x200" alt="foto1" class="column-three-img">
                 <p class="three-block">legenda</p>
             </div>
             <div class="three-block">
-                <img src="#" alt="foto2" class="column-three-img">
+                <img src="http://via.placeholder.com/300x200" alt="foto2" class="column-three-img">
                 <p class="three-block">legenda</p>
             </div>
             <div class="three-block">
-                <img src="#" alt="foto3" class="column-three-img">
+                <img src="http://via.placeholder.com/300x200" alt="foto3" class="column-three-img">
                 <p class="three-block">legenda</p>
             </div>
         </div>
@@ -84,15 +111,15 @@
         <h3>bibibi</h3>
         <div class="about-short">
             <div class="img-about-short">
-                <img src="#" alt="foto-rosto" class="about-short-face">
+                <img src="http://via.placeholder.com/200x300" alt="foto-rosto" class="about-short-face">
             </div>
             <div class="quotes-sub">
-                <p class="quote"></p>
-                <p class="author"></p>
+                <p class="quote">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio officia quae explicabo est magni aspernatur amet natus molestias molestiae vel! Expedita asperiores cum numquam nesciunt, sit velit hic sed provident?</p>
+                <p class="author">autor</p>
             </div>
             <div class="logos">
-                <img src="#" alt="logo1" class="logo-2">
-                <img src="#" alt="logo2" class="logo-2">
+                <img src="http://via.placeholder.com/100x100" alt="logo1" class="logo-2">
+                <img src="http://via.placeholder.com/100x100" alt="logo2" class="logo-2">
             </div>
         </div>
         <button class="secondary">bobobo</button>
@@ -105,24 +132,26 @@
             <p>seja livre</p>
         </div>
         <div class="footer-box">
-            <button class="primary"><a href="pagina de sobre">bibibibo</a></button>
+            <button class="primary">
+                <a href="media.html">bibibibo</a>
+            </button>
             <p>bibib</p>
             <div class="img-logo-sm">
-                <img src="#" alt="fb">
-                <img src="#" alt="insta">
-                <img src="#" alt="whatsapp">
+                <img src="http://via.placeholder.com/50x50" alt="fb">
+                <img src="http://via.placeholder.com/50x50" alt="insta">
+                <img src="http://via.placeholder.com/50x50" alt="whatsapp">
             </div>
         </div>
     </footer>
-    	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-	<!-- Popper JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
-	<!-- Latest compiled Java -->
+    <!-- Latest compiled Java -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    
+
     <script src="assets/js/main.js"></script>
 </body>
 
