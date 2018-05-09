@@ -1,0 +1,27 @@
+
+.quotes { 
+    color: #CCCCCC;
+}
+
+.author { 
+    color: grey;
+}
+
+
+footer { 
+    display: flex;
+    background-color: grey;
+
+    .info-footer { 
+        display: inline-flex;
+    }
+
+    .footer-box { 
+        .img-logo-sm { 
+            display: inline;
+            justify-content: space-around;
+        }
+    }
+
+
+}
