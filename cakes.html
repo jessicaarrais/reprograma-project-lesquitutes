@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,3 +44,49 @@
 </body>
 
 </html>
+=======
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/media.scss" />
+    <title>les Quitutes - Bolos</title>
+</head>
+
+<body>
+
+  <h1>les Quitutes - Bolos</h1>
+
+  <button class="button-category" type="button" name="cakes" onclick="onClickCategory(this.name)">
+    Bolos
+  </button>
+  <button class="button-category" type="button" name="desserts" onclick="onClickCategory(this.name)">
+    Doces
+  </button>
+
+  <button class="button-product-type" type="button" value="cakes-array" name="decorated" onclick="onClickProductType(this.value, this.name)">
+    Bolos Decorados
+  </button>
+
+  <button class="button-product-type" type="button" value="cakes-array" name="naked-cake" onclick="onClickProductType(this.value, this.name)">
+    Naked Cakes
+  </button>
+
+  <button class="button-product-type" type="button" value="cakes-array" name="american-pasta" onclick="onClickProductType(this.value, this.name)">
+    Bolos Pasta Americana
+  </button>
+
+  <div class="les-cards-products">
+    <!-- constructor of cards' logic in javascript cakes.js and main.js -->
+  </div>
+
+  <script src="assets/js/productsDB.js" charset="utf-8"></script>
+  <script src="assets/js/main.js" charset="utf-8"></script>
+  <script src="assets/js/cakes.js" charset="utf-8"></script>
+</body>
+
+</html>
+>>>>>>> upstream/master
