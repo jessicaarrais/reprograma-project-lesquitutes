@@ -1,35 +1,53 @@
-const imported = document.createElement('script');
-imported.src = 'assets/js/products.js';
-document.head.appendChild(imported);
-
-let divCardsProducts = document.querySelector('.cards-products');
-
-function onClickProduct (buttonValue, buttonName) {
-  console.log(buttonName, buttonValue);
-
-  if (buttonValue === 'desserts-array') {
-    constructorHTML(dessertsArray, buttonName);
+function onClickCategory (productCategory) {
+  if ( productCategory === 'cakes') {
+    window.location.href = 'cakes.html';
   }
-
-  if (buttonValue === 'cakes-array') {
-    constructorHTML(cakesArray, buttonName);
+  if ( productCategory === 'desserts') {
+    window.location.href = 'desserts.html';
   }
 }
 
-function constructorHTML (array, buttonName) {
-  // if (divCardsProducts.hasChildNodes()) {
-  //   divCardsProducts.removeChild(divCard);
-  //   console.log(divCardsProducts.hasChildNodes());
-  // }
+function onClickProductType (productCategory, productType) {
+  console.log(productType, productCategory);
 
-  array.filter(element => element.type === buttonName).map(element => {
-    let divCard = document.createElement('div');
+  if (productCategory === 'desserts-array') {
+    constructorHTML(desserts, productType);
+  }
 
-    if (element.brief !== null) {
-      divCard.innerHTML = `<div class="card-double"><img style="width: 50px" class="card-img" src=${element.src} alt=${element.alt}><p>${element.alt}</p></div>`;
-    } else {
-      divCard.innerHTML = `<div class="card-single"><img style="width: 50px" class="card-img" src=${element.src} alt=${element.alt}><p>${element.alt}</p></div>`;
+  if (productCategory === 'cakes-array') {
+    constructorHTML(cakes, productType);
+  }
+}
+
+function constructorHTML (categories, productType) {
+  if (divCardsProducts.hasChildNodes()) {
+    while (divCardsProducts.firstChild) {
+      divCardsProducts.removeChild(divCardsProducts.firstChild);
     }
+  }
+
+  categories.filter(element => element.type === productType).map(element => {
+    const divCard = document.createElement('div');
+
+    if (element.brief !== '') {
+      divCard.innerHTML = `
+        <div class='les-card-double'>
+          <img style="width: 50px" class="les-card-img" src=${element.src} alt=${element.description}>
+          <p>${element.description}</p>
+          <p>${element.brief}</p>
+          ${element.tags.map(tag => `<p>${tag}</p>`).join('')}
+        </div>
+      `;
+    } else {
+      divCard.innerHTML = `
+        <div class='les-card-single'>
+          <img style="width: 50px" class="les-card-img" src=${element.src} alt=${element.description}>
+          <p>${element.description}</p>
+          ${element.tags.map(tag => `<p>${tag}</p>`).join('')}
+        </div>
+      `;
+    }
+
     divCardsProducts.appendChild(divCard);
   });
 }
