@@ -9,12 +9,13 @@ body {
     background-color: #fafafa;
 }
 
-h2{
+h2 {
     margin: 10px 0;
 }
 
-h5{
-    padding: 10px;
+h5 {
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 
 section {
@@ -22,12 +23,9 @@ section {
     margin: 0 auto;
     padding: 20px 0;
 
-    div {
-        padding: 20px 0;
-    }
-
     .container {
         width: 1000px;
+        padding: 20px 0;
 
         .linha{
             display: flex;
@@ -117,9 +115,8 @@ section {
 
 footer {
     width: 100%;
-    background-color: #4a4a4a;
+    background-color: #27537B;
     color: #ffffff;
-    padding: 10px 0;
 
     ul {
         margin: 0;
@@ -131,18 +128,12 @@ footer {
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
-        padding: 20px 60px;
-    }
-
-    .logo-footer{
-
-        img {
-            width: 90px;
-        }
+        padding: 50px 0;
     }
 
     .btn-footer{
         padding: 10px 25px;
+        margin-bottom: 30px;
         background-color: #EF4A81;
         color: #ffffff;
         font-size: 12px;
@@ -168,11 +159,12 @@ footer {
 
 .footnote{
     text-align: center;
-    background-color: #333333;
+    background-color: #14365C;
     width: 100%;
     margin: 0;
-    padding: 5px 0;
-    font-size: 9px;
+    padding: 10px 0;
+    font-size: 12px;
+    color: #27537B;
 }
 
 @media (max-width: 768px) {
