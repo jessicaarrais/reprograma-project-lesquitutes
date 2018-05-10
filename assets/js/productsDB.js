@@ -5,6 +5,8 @@ let desserts = [
     src: "assets/img/cupcake-abobora.JPG",
     brief: '',
     tags: ['qsd'],
+    srcTagG: 'assets/img/selo-GNT.png',
+    srcTagD: 'assets/img/selo-diet.png',
   },
   {
     type: "cupcake",
@@ -12,6 +14,8 @@ let desserts = [
     src: "assets/img/cupcake-integral-banana.JPG",
     brief: '',
     tags: ['diet'],
+    srcTagG: 'assets/img/selo-GNT.png',
+    srcTagD: 'assets/img/selo-diet.png',
   },
   {
     type: "cupcake",
@@ -19,6 +23,8 @@ let desserts = [
     src: "assets/img/cupcake-red-velvet.JPG",
     brief: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     tags: ['qsd'],
+    srcTagG: 'assets/img/selo-GNT.png',
+    srcTagD: 'assets/img/selo-diet.png',
   },
   {
     type: "cupcake",
@@ -40,6 +46,8 @@ let desserts = [
     src:"assets/img/doce-red-velvet-pote.JPG",
     brief: '',
     tags: ['qsd'],
+    srcTagG: 'assets/img/selo-GNT.png',
+    srcTagD: 'assets/img/selo-diet.png',
   },
   {
     type: "dessert",
@@ -82,6 +90,8 @@ let desserts = [
     src:"assets/img/doce-brigadeiro-beijinho-copinho.png",
     brief: '',
     tags: ['diet'],
+    srcTagG: 'assets/img/selo-GNT.png',
+    srcTagD: 'assets/img/selo-diet.png',
   },
   {
     type: "dessert",
@@ -89,6 +99,8 @@ let desserts = [
     src:"assets/img/IMG_4535.JPG",
     brief: '',
     tags: ['diet'],
+    srcTagG: 'assets/img/selo-GNT.png',
+    srcTagD: 'assets/img/selo-diet.png',
   },
   {
     type: "dessert",
@@ -105,14 +117,18 @@ let cakes = [
     description: "Red Velvet com cream cheese e morangos",
     src: "assets/img/decorado-red-velvet-cream-cheese-morangos.JPG",
     brief: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    tags: ['qsj'],
+    tags: ['qsd'],
+    srcTagG: 'assets/img/selo-GNT.png',
+    srcTagD: 'assets/img/selo-diet.png',
   },
   {
     type: "decorated",
     description: "Red Velvet com cream cheese",
     src: "assets/img/decorado-red-velvet-cream-cheese.JPG",
     brief: '',
-    tags: ['qsj'],
+    tags: ['qsd'],
+    srcTagG: 'assets/img/selo-GNT.png',
+    srcTagD: 'assets/img/selo-diet.png',
   },
   {
     type: "decorated",
@@ -127,6 +143,8 @@ let cakes = [
     src: "assets/img/decorado-chocolate-ganhache-amargo.jpg",
     brief: '',
     tags: ['diet'],
+    srcTagG: 'assets/img/selo-GNT.png',
+    srcTagD: 'assets/img/selo-diet.png',
   },
   {
     type: "decorated",
@@ -148,6 +166,8 @@ let cakes = [
     src: "assets/img/decorado-chocolate-morangos.jpg",
     brief: '',
     tags: ['diet'],
+    srcTagG: 'assets/img/selo-GNT.png',
+    srcTagD: 'assets/img/selo-diet.png',
   },
   {
     type: "decorated",
@@ -197,6 +217,8 @@ let cakes = [
     src: "assets/img/naked-cake-bem-casado.JPG",
     brief: '',
     tags: ['diet'],
+    srcTagG: 'assets/img/selo-GNT.png',
+    srcTagD: 'assets/img/selo-diet.png',
   },
   {
     type: "naked-cake",
@@ -204,13 +226,17 @@ let cakes = [
     src: "assets/img/naked-cake-chocolate-creme-frutas.JPG",
     brief: '',
     tags: ['diet'],
+    srcTagG: 'assets/img/selo-GNT.png',
+    srcTagD: 'assets/img/selo-diet.png',
   },
   {
     type: "naked-cake",
     description: "Naked Cake de chocolate com kiwi e morangos",
     src: "assets/img/naked-cake-morango-kiwi.jpg",
     brief: '',
-    tags: ['diet','qsj'],
+    tags: ['diet','qsd'],
+    srcTagG: 'assets/img/selo-GNT.png',
+    srcTagD: 'assets/img/selo-diet.png',
   },
   {
     type: "american-pasta",

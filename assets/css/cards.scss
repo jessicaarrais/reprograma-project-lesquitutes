@@ -5,7 +5,7 @@ $card-height: 380px;
     .card {
         height: $card-height;
         margin: 10px 0;
-
+        z-index: -200;
     }
 
     .card-tagline {

@@ -16,14 +16,16 @@ body {
 
   // Navigation bar
   .navbar {
+      z-index: 499;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
   }
   .navbar-brand {
     top: 10px;
     width: 90px;
-  
+
   }
   .logo {
+    z-index: 500;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
   }
   .nav-link, .les-subitem {
@@ -37,21 +39,27 @@ body {
 
   // Submenu
 
-  a.les-red-item {
+  button.les-red-item {
+    border-style: none;
+    background: none;
     border-bottom:2px solid $les-red;
   }
-  a.les-yellow-item {
+  button.les-yellow-item {
+    border-style: none;
+    background: none;
     border-bottom:2px solid $les-yellow;
   }
-  a.les-green-item {
+  button.les-green-item {
+    border-style: none;
+    background: none;
     border-bottom:2px solid $les-green;
   }
-  
+
   .les-subitem:hover {
     text-decoration: none;
     color: rgba(0,0,0,.7);
   }
-  
+
   .les-subitem:active {
     color: rgba(0,0,0,.9);
     font-weight: bolder;
@@ -82,10 +90,10 @@ body {
 
   // Exemplo de header -- PODE MUDAR --
   .les-title {
-    bottom: 100px;
+    top: 335px;
     left: 50px;
+    z-index: 0;
     text-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
   }
 
 }
-

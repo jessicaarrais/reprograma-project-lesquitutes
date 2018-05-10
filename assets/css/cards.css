@@ -1,6 +1,7 @@
 .main-cards .card {
   height: 380px;
   margin: 10px 0;
+  z-index: -200;
 }
 .main-cards .card-tagline {
   font-size: 12px;
