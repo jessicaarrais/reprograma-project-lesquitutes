@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Les Quitutes Confeitaria</title>
+
+    <title>Les Quitutes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
@@ -75,11 +76,63 @@
                 </div>
             </div>
         </div>
-
     </section>
-    <section class="sobre-faq">
-        <h2>Perguntas frequentes</h2>
-        <!-- toggle perguntas.. eu faço quarta-feira depois q as perguntas chegarem - ass mari. -->
+    <section>
+        <h2>perguntas frequentes</h2>
+<div class="container">
+        <div class="box">
+            <div class="top">
+                pergunta
+            </div>
+            <div class="bottom">
+                resposta
+            </div>
+        </div>
+        <div class="box">
+            <div class="top">
+                pergunta 
+            </div>
+            <div class="bottom">
+                resposta
+            </div>
+        </div>
+        <div class="box">
+            <div class="top">
+                pergunta 
+            </div>
+            <div class="bottom">
+                resposta
+            </div>
+        </div>
+    </div>
+    <style>
+        .container .box {
+            float: left;
+            width: 150px;
+            margin: 20px;
+        }
+
+        .container .box .top {
+            padding: 12px;
+            /* background-color: blue; */
+            color: black;
+            cursor: pointer;
+        }
+
+        .container .box .bottom {
+            padding: 12px;
+            /* background-color: red; */
+            color: black;
+            display: none;
+        }
+    </style>
+    <script>
+        $('.top').on('click', function () {
+            $parent_box = $(this).closest('.box');
+            $parent_box.siblings().find('.bottom').slideUp();
+            $parent_box.find('.bottom').slideToggle(1000, 'swing');
+        });
+    </script>    
     </section>
     <footer>
         <div class="footer-container">
