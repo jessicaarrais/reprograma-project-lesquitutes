@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Les Quitutes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet"> 
-    <!-- les Quitutes css for Nav -->
-    <link rel="stylesheet" type="text/css" media="screen" href="nav.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/desserts.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/cards.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/desserts.css" />
   
-  <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light position-fixed w-100">
 
+  <title>les Quitutes - Doces</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light position-fixed w-100">
       <a class="navbar-brand position-absolute width-90" href="home.html"><img class="logo rounded-circle w-100" src="LOGO-LESQUITUTES.png" alt=""></a>
 
       <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,53 +50,41 @@
       </div>
     </header>
 
+        <!-- Submenu -->
+        <div class="container my-3 les-submenu">
+            <div class="row justify-content-md-center">
+              <a class="button-product-type mx-auto les-subitem les-red-item active" type="button" value="desserts-array" name="cupcake" onclick="onClickProductType(this.value, this.name)">Cupcakes</a>
+              <a class="button-product-type mx-auto les-subitem les-yellow-item"  type="button" value="desserts-array" name="dessert" onclick="onClickProductType(this.value, this.name)">Docinhos</a>
+              <a class="button-product-type mx-auto les-subitem les-green-item"  type="button" value="desserts-array" name="souvenir" onclick="onClickProductType(this.value, this.name)">Lembrancinhas</a>
+            </div>
+          </div>
 
 
-    <!-- Submenu -->
-    <div class="container my-3 les-submenu">
-      <div class="row justify-content-md-center">
-        <a class="button-product-type mx-auto les-subitem les-red-item active" type="button" value="desserts-array" name="cupcake" onclick="onClickProductType(this.value, this.name)">Cupcakes</a>
-        <a class="button-product-type mx-auto les-subitem les-yellow-item"  type="button" value="desserts-array" name="dessert" onclick="onClickProductType(this.value, this.name)">Docinhos</a>
-        <a class="button-product-type mx-auto les-subitem les-green-item"  type="button" value="desserts-array" name="souvenir" onclick="onClickProductType(this.value, this.name)">Lembrancinhas</a>
-      </div>
+  <button class="button-category" type="button" name="cakes" onclick="onClickCategory(this.name)">
+    Bolos
+  </button>
+  <button class="button-category" type="button" name="desserts" onclick="onClickCategory(this.name)">
+    Doces
+  </button>
+
+  <button class="button-product-type" type="button" value="desserts-array" name="cupcake" onclick="onClickProductType(this.value, this.name)">
+    Cupcakes
+  </button>
+
+  <button class="button-product-type" type="button" value="desserts-array" name="dessert" onclick="onClickProductType(this.value, this.name)">
+    Doces
+  </button>
+
+  <button class="button-product-type" type="button" value="desserts-array" name="souvenir" onclick="onClickProductType(this.value, this.name)">Lembrancinhas</button>
+
+  <div class="main-cards">
+    <div class="les-cards-products">
+      <!-- constructor of cards' logic in javascript cakes.js and main.js -->
     </div>
+  </div>
 
-
-    <!-- <button class="button-category" type="button" name="cakes" onclick="onClickCategory(this.name)">
-      Bolos
-    </button>
-    <button class="button-category" type="button" name="desserts" onclick="onClickCategory(this.name)">
-      Doces
-    </button>
-  
-    <button class="button-product-type" type="button" value="desserts-array" name="cupcake" onclick="onClickProductType(this.value, this.name)">
-      Cupcakes
-    </button>
-  
-    <button class="button-product-type" type="button" value="desserts-array" name="dessert" onclick="onClickProductType(this.value, this.name)">
-      Doces
-    </button>
-  
-    <button class="button-product-type" type="button" value="desserts-array" name="souvenir" onclick="onClickProductType(this.value, this.name)">Lembrancinhas</button> -->
-  
-    <div class="main-cards">
-      <div class="les-cards-products">
-        <!-- constructor of cards' logic in javascript cakes.js and main.js -->
-      </div>
-    </div>
-  
-    
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
-    <!-- Les Quitutes JS -->
-    <script src="assets/js/productsDB.js" charset="utf-8"></script>
-    <script src="assets/js/main.js" charset="utf-8"></script>
-    <script src="assets/js/desserts.js" charset="utf-8"></script>
-  </body>
+  <script src="assets/js/productsDB.js" charset="utf-8"></script>
+  <script src="assets/js/main.js" charset="utf-8"></script>
+  <script src="assets/js/desserts.js" charset="utf-8"></script>
+</body>
 </html>

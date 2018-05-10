@@ -26,23 +26,27 @@ function constructorHTML (categories, productType) {
     }
   }
 
-  categories.filter(element => element.type === productType).map(element => {
+  let i = 0;
+  categories.filter(element => element.type === productType).forEach(element => {
     const divCard = document.createElement('div');
 
     if (element.brief !== '') {
+      i++;
+      divCard.className = `card les-card-double`;
       divCard.innerHTML = `
-        <div class='les-card-double'>
-          <img style="width: 50px" class="les-card-img" src=${element.src} alt=${element.description}>
-          <p>${element.description}</p>
+        <img class='card-img-top' src=${element.src}>
+        <div class='card-body'>
+          <h6 class='card-title'>${element.description}</h6>
           <p>${element.brief}</p>
           ${element.tags.map(tag => `<p>${tag}</p>`).join('')}
         </div>
       `;
     } else {
+      divCard.className = 'card les-card-single';
       divCard.innerHTML = `
-        <div class='les-card-single'>
-          <img style="width: 50px" class="les-card-img" src=${element.src} alt=${element.description}>
-          <p>${element.description}</p>
+        <img class='card-img-top' src=${element.src}>
+        <div class='card-body'>
+          <h6 class='card-title'>${element.description}</h6>
           ${element.tags.map(tag => `<p>${tag}</p>`).join('')}
         </div>
       `;

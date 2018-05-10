@@ -1,92 +1,49 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>les Quitutes</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 
-
-</head>
-<body>
-	<nav class="navbar navbar-default navbar-expand-md navbar-fixed-top">
-			<!-- logo -->
-			<a href="#" class="navbar-brand"><img src="http://via.placeholder.com/90x90" alt="logo-le-quitutes"></a>
-
-			<!-- sanduíche -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<!-- conteúdo do sanduíche -->
-			<div class="collapse navbar-collapse" id="navbarMenu">
-					<ul class="nav navbar-nav ml-auto">
-							<li class="nav-item"><a class="nav-link text-dark" href="cakes.html">Bolos<span class="sr-only"></span></a></li>
-							<li class="nav-item"><a class="nav-link text-dark" href="desserts.html">Doces</a></li>
-							<li class="nav-item"><a class="nav-link text-dark" href="media.html">Sobre nós</a></li>
-					</ul>
-			</div>
-	</nav>
-
-
-	
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-	<!-- Popper JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-</body>
-
-</html>
-=======
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/media.scss" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/cards.css" />
+
     <title>les Quitutes - Bolos</title>
-</head>
+  </head>
 
-<body>
+  <body>
 
-  <h1>les Quitutes - Bolos</h1>
+    <h1>les Quitutes - Bolos</h1>
 
-  <button class="button-category" type="button" name="cakes" onclick="onClickCategory(this.name)">
-    Bolos
-  </button>
-  <button class="button-category" type="button" name="desserts" onclick="onClickCategory(this.name)">
-    Doces
-  </button>
+    <button class="button-category" type="button" name="cakes" onclick="onClickCategory(this.name)">
+      Bolos
+    </button>
+    <button class="button-category" type="button" name="desserts" onclick="onClickCategory(this.name)">
+      Doces
+    </button>
 
-  <button class="button-product-type" type="button" value="cakes-array" name="decorated" onclick="onClickProductType(this.value, this.name)">
-    Bolos Decorados
-  </button>
+    <button class="button-product-type" type="button" value="cakes-array" name="decorated" onclick="onClickProductType(this.value, this.name)">
+      Bolos Decorados
+    </button>
 
-  <button class="button-product-type" type="button" value="cakes-array" name="naked-cake" onclick="onClickProductType(this.value, this.name)">
-    Naked Cakes
-  </button>
+    <button class="button-product-type" type="button" value="cakes-array" name="naked-cake" onclick="onClickProductType(this.value, this.name)">
+      Naked Cakes
+    </button>
 
-  <button class="button-product-type" type="button" value="cakes-array" name="american-pasta" onclick="onClickProductType(this.value, this.name)">
-    Bolos Pasta Americana
-  </button>
+    <button class="button-product-type" type="button" value="cakes-array" name="american-pasta" onclick="onClickProductType(this.value, this.name)">
+      Bolos Pasta Americana
+    </button>
 
-  <div class="les-cards-products">
-    <!-- constructor of cards' logic in javascript cakes.js and main.js -->
-  </div>
+    <div class="main-cards">
+      <div class="les-cards-products">
+        <!-- constructor of cards' logic in javascript cakes.js and main.js -->
+      </div>
+    </div>
 
-  <script src="assets/js/productsDB.js" charset="utf-8"></script>
-  <script src="assets/js/main.js" charset="utf-8"></script>
-  <script src="assets/js/cakes.js" charset="utf-8"></script>
-</body>
+    <script src="assets/js/productsDB.js" charset="utf-8"></script>
+    <script src="assets/js/main.js" charset="utf-8"></script>
+    <script src="assets/js/cakes.js" charset="utf-8"></script>
+  </body>
 
 </html>
->>>>>>> upstream/master
