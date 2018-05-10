@@ -1,0 +1,47 @@
+$card-height: 340px;
+
+  .main-cards {
+    font-size: 13px;
+    text-align: center;
+
+    .les-cards-products {
+      max-width: 800px;
+      margin: 10px auto;
+      display: grid;
+      grid-auto-flow: dense;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));  grid-gap: 20px;
+
+      .les-card-double {
+        grid-column-end: span 2;
+        grid-row-end: span 2;
+        background-size: cover;
+        height: $card-height * 2 + 20px;
+        h6 {
+          margin-bottom: 3rem;
+        }
+      }
+
+      .les-card-single {
+        background-size: cover;
+        height: $card-height;
+        h6 {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    @media (max-width: 560px) {
+      .les-cards-products {
+        margin: 10px 10%;
+      }
+
+      .les-card-double {
+        height: $card-height * 2;
+        grid-column-end: span 1;
+      }
+
+      .les-card-single {
+        height: $card-height;
+      }
+    }
+  }
