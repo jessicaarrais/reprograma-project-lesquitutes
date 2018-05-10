@@ -1,21 +1,61 @@
-.card{
-    height:340px;
-    margin: 10px 0;
+$card-height: 380px;
 
-}
+  .main-cards {
 
-.card-tagline{
-    font-size: 12px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #ffffff;
-}
+    .card {
+        height: $card-height;
+        margin: 10px 0;
 
-.card-headline{
-    margin: 10px 0;
-    font-size: 22px;
-    line-height: 32px;
-    font-weight: 300;
-    color: #ffffff;
-}
+    }
 
+    .card-tagline {
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .card-headline {
+        margin: 10px 0;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+
+    .les-cards-products {
+      max-width: 840px;
+      margin: 10px auto;
+      display: grid;
+      grid-auto-flow: dense;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));  grid-gap: 1em;
+
+      .les-card-double {
+        grid-column-end: span 2;
+        background-size: cover;
+        height: $card-height;
+      }
+
+      .les-card-single {
+        background-size: cover;
+        height: $card-height;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .les-cards-products {
+        margin: 10px 10%;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));  grid-gap: 1em;
+
+      }
+
+      .les-card-double {
+        height: $card-height;
+        grid-column-end: span 1;
+      }
+
+      .les-card-single {
+        height: $card-height;
+      }
+    }
+  }

@@ -26,23 +26,31 @@ function constructorHTML (categories, productType) {
     }
   }
 
-  categories.filter(element => element.type === productType).map(element => {
+  let i = 0;
+  categories.filter(element => element.type === productType).forEach(element => {
     const divCard = document.createElement('div');
 
     if (element.brief !== '') {
+      i++;
+      divCard.className = 'card les-card-double d-flex align-items-stretchs';
       divCard.innerHTML = `
-        <div class='les-card-double'>
-          <img style="width: 50px" class="les-card-img" src=${element.src} alt=${element.description}>
-          <p>${element.description}</p>
-          <p>${element.brief}</p>
+        <img class='mg-fluid h-100' src=${element.src}>
+        <div class='card-body position-absolute w-50'>
+          <p class='card-text text-light card-headline'>${element.brief}</p>
+          <p class='card-text text-light card-tagline mb-0'>Tatiane Araújo</p>
+          <p class='card-text text-light card-tagline'>Instagram</p>
+          <div class='card-text bg-light'>
+            <p class='text-center mt-2 mb-2'>${element.description}</p>
+          </div>
           ${element.tags.map(tag => `<p>${tag}</p>`).join('')}
         </div>
       `;
     } else {
+      divCard.className = 'card les-card-single d-flex align-items-stretch';
       divCard.innerHTML = `
-        <div class='les-card-single'>
-          <img style="width: 50px" class="les-card-img" src=${element.src} alt=${element.description}>
-          <p>${element.description}</p>
+        <img class='img-fluid h-100' src=${element.src}>
+        <div class='card-text bg-light'>
+          <p class='text-center mt-2 mb-2'>${element.description}</p>
           ${element.tags.map(tag => `<p>${tag}</p>`).join('')}
         </div>
       `;
