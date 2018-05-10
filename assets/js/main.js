@@ -42,6 +42,8 @@ function constructorHTML (categories, productType) {
           <div class='card-text bg-light'>
             <p class='text-center mt-2 mb-2'>${element.description}</p>
           </div>
+
+
           ${element.tags.map(tag => `<img class='stamp-card' src='${element.srcTagG}'>`).join('')}
         </div>
       `;
