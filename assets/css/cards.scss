@@ -51,7 +51,7 @@ $card-height: 380px;
 
       .les-card-double {
         height: $card-height;
-        grid-column-end: span 1;
+        grid-column-end: auto;
       }
 
       .les-card-single {

@@ -15,7 +15,6 @@
   font-weight: 300;
   color: #ffffff;
 }
-
 .main-cards .les-cards-products {
   max-width: 840px;
   margin: 10px auto;
@@ -24,37 +23,16 @@
   grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   grid-gap: 1em;
 }
-
 .main-cards .les-cards-products .les-card-double {
   grid-column-end: span 2;
   background-size: cover;
-<<<<<<< HEAD
   height: 380px;
-=======
-  height: 700px;
 }
-
-.main-cards .les-cards-products .les-card-double h6 {
-  margin-bottom: 3rem;
->>>>>>> 48c70f453d0e4be06a0cb8f17bf0bc2efc35b881
-}
-
 .main-cards .les-cards-products .les-card-single {
   background-size: cover;
-<<<<<<< HEAD
   height: 380px;
 }
 @media (max-width: 360px) {
-=======
-  height: 340px;
-}
-
-.main-cards .les-cards-products .les-card-single h6 {
-  margin-bottom: 2rem;
-}
-
-@media (max-width: 560px) {
->>>>>>> 48c70f453d0e4be06a0cb8f17bf0bc2efc35b881
   .main-cards .les-cards-products {
     margin: 10px 10%;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -62,10 +40,11 @@
   }
   .main-cards .les-card-double {
     height: 380px;
-    grid-column-end: span 1;
+    grid-column-end: auto;
   }
   .main-cards .les-card-single {
     height: 380px;
   }
 }
+
 /*# sourceMappingURL=cards.css.map */
