@@ -12,16 +12,16 @@ h2 {
   margin: 10px 0; }
 
 h5 {
-  padding: 10px; }
+  font-weight: 300;
+  margin-bottom: 10px; }
 
 section {
   display: block;
   margin: 0 auto;
   padding: 20px 0; }
-  section div {
-    padding: 20px 0; }
   section .container {
-    width: 1000px; }
+    width: 1000px;
+    padding: 20px 0; }
     section .container .linha {
       display: flex;
       justify-content: center;
@@ -79,9 +79,8 @@ section {
 ---------------------------------------*/
 footer {
   width: 100%;
-  background-color: #4a4a4a;
-  color: #ffffff;
-  padding: 10px 0; }
+  background-color: #27537B;
+  color: #ffffff; }
   footer ul {
     margin: 0;
     list-style-type: none;
@@ -90,11 +89,10 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 20px 60px; }
-  footer .logo-footer img {
-    width: 90px; }
+    padding: 50px 0; }
   footer .btn-footer {
     padding: 10px 25px;
+    margin-bottom: 30px;
     background-color: #EF4A81;
     color: #ffffff;
     font-size: 12px;
@@ -112,11 +110,12 @@ footer {
 
 .footnote {
   text-align: center;
-  background-color: #333333;
+  background-color: #14365C;
   width: 100%;
   margin: 0;
-  padding: 5px 0;
-  font-size: 9px; }
+  padding: 10px 0;
+  font-size: 12px;
+  color: #27537B; }
 
 @media (max-width: 768px) {
   footer .footer-container {
