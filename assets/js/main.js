@@ -32,20 +32,21 @@ function constructorHTML (categories, productType) {
 
     if (element.brief !== '') {
       i++;
-      divCard.className = `card les-card-double${i}`;
+      divCard.className = `card les-card-double`;
       divCard.innerHTML = `
+        <img class='card-img-top' src=${element.src}>
         <div class='card-body'>
-          <h6>${element.description}</h6>
+          <h6 class='card-title'>${element.description}</h6>
           <p>${element.brief}</p>
           ${element.tags.map(tag => `<p>${tag}</p>`).join('')}
         </div>
       `;
     } else {
       divCard.className = 'card les-card-single';
-      divCard.style.backgroundImage = `url(${element.src})`;
       divCard.innerHTML = `
+        <img class='card-img-top' src=${element.src}>
         <div class='card-body'>
-          <h6>${element.description}</h6>
+          <h6 class='card-title'>${element.description}</h6>
           ${element.tags.map(tag => `<p>${tag}</p>`).join('')}
         </div>
       `;
