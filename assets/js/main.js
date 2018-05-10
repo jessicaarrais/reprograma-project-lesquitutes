@@ -32,21 +32,25 @@ function constructorHTML (categories, productType) {
 
     if (element.brief !== '') {
       i++;
-      divCard.className = `card les-card-double`;
+      divCard.className = 'card les-card-double d-flex align-items-stretchs';
       divCard.innerHTML = `
-        <img class='card-img-top' src=${element.src}>
-        <div class='card-body'>
-          <h6 class='card-title'>${element.description}</h6>
-          <p>${element.brief}</p>
+        <img class='mg-fluid h-100' src=${element.src}>
+        <div class='card-body position-absolute w-50'>
+          <p class='card-text text-light card-headline'>${element.brief}</p>
+          <p class='card-text text-light card-tagline mb-0'>Tatiane Araújo</p>
+          <p class='card-text text-light card-tagline'>Instagram</p>
+          <div class='card-text bg-light'>
+            <p class='text-center mt-2 mb-2'>${element.description}</p>
+          </div>
           ${element.tags.map(tag => `<p>${tag}</p>`).join('')}
         </div>
       `;
     } else {
-      divCard.className = 'card les-card-single';
+      divCard.className = 'card les-card-single d-flex align-items-stretch';
       divCard.innerHTML = `
-        <img class='card-img-top' src=${element.src}>
-        <div class='card-body'>
-          <h6 class='card-title'>${element.description}</h6>
+        <img class='img-fluid h-100' src=${element.src}>
+        <div class='card-text bg-light'>
+          <p class='text-center mt-2 mb-2'>${element.description}</p>
           ${element.tags.map(tag => `<p>${tag}</p>`).join('')}
         </div>
       `;

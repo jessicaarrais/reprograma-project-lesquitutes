@@ -1,42 +1,56 @@
-$card-height: 340px;
+$card-height: 380px;
 
   .main-cards {
-    font-size: 13px;
-    text-align: center;
+
+    .card {
+        height: $card-height;
+        margin: 10px 0;
+
+    }
+
+    .card-tagline {
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .card-headline {
+        margin: 10px 0;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #ffffff;
+    }
 
     .les-cards-products {
-      max-width: 800px;
+      max-width: 840px;
       margin: 10px auto;
       display: grid;
       grid-auto-flow: dense;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));  grid-gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));  grid-gap: 1em;
 
       .les-card-double {
         grid-column-end: span 2;
-        grid-row-end: span 2;
         background-size: cover;
-        height: $card-height * 2 + 20px;
-        h6 {
-          margin-bottom: 3rem;
-        }
+        height: $card-height;
       }
 
       .les-card-single {
         background-size: cover;
         height: $card-height;
-        h6 {
-          margin-bottom: 2rem;
-        }
       }
     }
 
-    @media (max-width: 560px) {
+    @media (max-width: 360px) {
       .les-cards-products {
         margin: 10px 10%;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));  grid-gap: 1em;
+
       }
 
       .les-card-double {
-        height: $card-height * 2;
+        height: $card-height;
         grid-column-end: span 1;
       }
 

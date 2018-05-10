@@ -17,13 +17,13 @@ let desserts = [
     type: "cupcake",
     description: "Cupcake red velvet",
     src: "assets/img/cupcake-red-velvet.JPG",
-    brief: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    brief: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     tags: ['qsd'],
   },
   {
     type: "cupcake",
     description: "Cupcake de chocolate",
-    src: "assets/img/cupcake-chocolate.JPG",
+    src: "assets/img/doce-cupcake-chocolate.JPG",
     brief: '',
     tags: [],
   },
@@ -37,7 +37,7 @@ let desserts = [
   {
     type: "dessert",
     description: "Red velvet no pote",
-    src:"assets/img/red-velvet-pote.JPG",
+    src:"assets/img/doce-red-velvet-pote.JPG",
     brief: '',
     tags: ['qsd'],
   },
@@ -57,7 +57,7 @@ let desserts = [
   },
   {
     type: "dessert",
-    description: "Saquinho de cookies de chocolate",
+    description: "Cookies de chocolate",
     src:"assets/img/IMG_4535.JPG",
     brief: '',
     tags: [],
@@ -65,13 +65,13 @@ let desserts = [
   {
     type: "dessert",
     description: "Brigadeiro",
-    src:"assets/img/brigadeiro.JPG",
+    src:"assets/img/doce-brigadeiro.JPG",
     brief: '',
     tags: [],
   },
   {
     type: "dessert",
-    description: "Brigadeiro de churros belga",
+    description: "Brigadeiro de churros",
     src:"assets/img/IMG_4535.JPG",
     brief: '',
     tags: [],
@@ -79,7 +79,7 @@ let desserts = [
   {
     type: "dessert",
     description: "Brigadeiro e Beijinho no copinho",
-    src:"assets/img/brigadeiro-beijinho-copinho.png",
+    src:"assets/img/doce-brigadeiro-beijinho-copinho.png",
     brief: '',
     tags: ['diet'],
   },
@@ -102,14 +102,14 @@ let desserts = [
 let cakes = [
   {
     type: "decorated",
-    description: "Bolo decorado Red Velvet com creme de cream cheese e morangos",
+    description: "Red Velvet com cream cheese e morangos",
     src: "assets/img/decorado-red-velvet-cream-cheese-morangos.JPG",
-    brief: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    brief: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     tags: ['qsj'],
   },
   {
     type: "decorated",
-    description: "Bolo decorado Red Velvet com creme de cream cheese",
+    description: "Red Velvet com cream cheese",
     src: "assets/img/decorado-red-velvet-cream-cheese.JPG",
     brief: '',
     tags: ['qsj'],
@@ -139,7 +139,7 @@ let cakes = [
     type: "decorated",
     description: "Bolo de pistache com merengue suíco",
     src: "assets/img/decorado-pistache-merengue.jpg",
-    brief: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    brief: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     tags: [],
   },
   {
@@ -160,7 +160,7 @@ let cakes = [
     type: "naked-cake",
     description: "Naked Cake de chocolate com Nutella",
     src: "assets/img/naked-cake-nutella.jpg",
-    brief: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    brief: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     tags: [],
   },
   {
