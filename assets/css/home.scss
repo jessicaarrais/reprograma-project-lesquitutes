@@ -1,0 +1,179 @@
+// 
+
+body {
+    margin: 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #606060;
+    background-color: #fafafa;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+// 
+
+section { 
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    div {
+        padding: 20px 0;
+    }
+
+    @media (max-width: 768px) {
+        #two {
+            .column-two, .column-three { 
+                width: 100%;
+
+                    div{
+                        width: 100%;
+                        padding: 20px 0;
+                    }
+
+                }
+            }
+        }
+}
+
+
+// primeira coluna - duas fotos 
+
+.title { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#two { 
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin: 30px;
+
+    .column-two {
+        display: flex; 
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        padding: 30px 320px;
+
+        @media (max-width: 768px) {
+            padding: 5px;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding-left: 40px;
+        }
+        
+        .column-two-block { 
+            position: relative; //pelo amor de deus não deleta isso
+
+            .column-two-img { 
+                height: 100%;
+            }
+            
+            .text-over { 
+                position: absolute; //pelo amor de deus não deleta isso
+                bottom: 8px;
+                left: 16px;
+            }            
+        }
+    }
+}
+
+// segunda coluna - três fotos 
+
+.column-three {
+    display: flex; 
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    padding: 30px 150px;
+
+    @media (max-width:768px){
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+        
+    .three-block { 
+        position: relative; //pelo amor de deus não deleta isso
+
+        .column-three-img { 
+            height: 100%;
+        }
+        .text-over { 
+            position: absolute; //pelo amor de deus não deleta isso
+            bottom: 8px;
+            left: 16px;
+        }            
+    }
+}
+
+// about
+
+.about-home {
+    align-content: center;
+
+    @media (max-width: 768px) {
+
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-left: 40px;
+    }
+
+    .about-short { 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        width: 800px;
+
+        .about-short-face { 
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        .quotes-sub { 
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            padding-left: 50px;
+
+            .quote{ 
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+            }
+
+            .author { 
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+            }
+
+            .logos { 
+                display: flex;
+                justify-content: space-between;
+                width: 400px;
+                
+            }
+        }
+
+    }
+}
+
+// button.primary { 
+//     display: flex;
+//     background-color:pink;
+//     justify-content: center;
+//     align-content: center;
+//     align-items: center;
+// }
+
