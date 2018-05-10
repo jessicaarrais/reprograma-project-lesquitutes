@@ -1,0 +1,91 @@
+$les-red:#ef476e;
+$les-yellow: #ffd166;
+$les-green: #07d6a0;
+$les-blue: #27587b;
+
+body {
+  background-color: #fafafa;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0;
+  min-height: 100%;
+  box-sizing: border-box;
+
+  // Navigation bar
+  .navbar {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
+  }
+  .navbar-brand {
+    top: 10px;
+    width: 90px;
+  
+  }
+  .logo {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
+  }
+  .nav-link, .les-subitem {
+    color: rgba(0,0,0,.5);
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+  }
+  // ________________________________________
+
+  // Submenu
+
+  a.les-red-item {
+    border-bottom:2px solid $les-red;
+  }
+  a.les-yellow-item {
+    border-bottom:2px solid $les-yellow;
+  }
+  a.les-green-item {
+    border-bottom:2px solid $les-green;
+  }
+  
+  .les-subitem:hover {
+    text-decoration: none;
+    color: rgba(0,0,0,.7);
+  }
+  
+  .les-subitem:active {
+    color: rgba(0,0,0,.9);
+    font-weight: bolder;
+  }
+
+  .les-submenu a.active {
+    color: black;
+    font-weight: bolder;
+  }
+  // ________________________________________
+
+  // Botao fixo
+  .btn-outline-danger {
+    top: 177px;
+    right: 20px;
+    font-size: smaller;
+    color: #fff;
+    background-color: $les-red;
+    border-color: $les-red;
+
+  }
+  .btn-outline-danger:hover {
+    font-weight: 500;
+    background-color: $les-red;
+    border-color: $les-yellow;
+  }
+  // ________________________________________
+
+  // Exemplo de header -- PODE MUDAR --
+  .les-title {
+    bottom: 100px;
+    left: 50px;
+    text-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
+  }
+
+}
+
