@@ -56,6 +56,8 @@ function constructorHTML(categories, productType) {
             <img class='img-fluid h-100' src=${element.src}>
             <div class='card-body position-absolute w-50'>
                 <p class='text-shadow card-text text-light card-headline'>${element.brief}</p>
+                <p class='text-shadow card-text- text-light card-tagline mb-2'>${element.author}</p>
+
                 ${element.tags.map(tag => `<img class='stamp-card' src='${tag}'>`).join('')}
             </div>
             <div class='card-text bg-light'>
