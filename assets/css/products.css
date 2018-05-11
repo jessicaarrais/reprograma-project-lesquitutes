@@ -67,5 +67,21 @@ body .les-title {
   z-index: 0;
   text-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
 }
+body .square-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 840px;
+  margin: 24px auto;
+}
+body .square-container .square {
+  width: 24%;
+  height: 80px;
+  border-radius: 5px;
+}
+body .square-container .square h5 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
 
 /*# sourceMappingURL=products.css.map */
