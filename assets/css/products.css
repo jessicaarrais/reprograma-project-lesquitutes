@@ -61,19 +61,6 @@ body .les-submenu a.active {
   color: black;
   font-weight: bolder;
 }
-body .btn-outline-danger {
-  top: 177px;
-  right: 20px;
-  font-size: smaller;
-  color: #fff;
-  background-color: #ef476e;
-  border-color: #ef476e;
-}
-body .btn-outline-danger:hover {
-  font-weight: 500;
-  background-color: #ef476e;
-  border-color: #ffd166;
-}
 body .les-title {
   top: 335px;
   left: 50px;

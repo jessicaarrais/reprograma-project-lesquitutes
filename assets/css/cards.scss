@@ -53,16 +53,24 @@ $card-height: 360px;
         }
 
         .les-cards-products {
-            margin: 10px 10%;
+            margin: 10px 5%;
             grid-gap: 1em;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            grid-gap: 0.8em;
 
             .les-card-double {
-                grid-column-end: span 1;
+                height: 300px !important;
+
+                .img-fluid {
+                    height: 280px !important;
+                }
             }
 
             .les-card-single {
+                height: 300px !important;
+
                 .img-fluid {
-                    height: $card-height - 38px !important;
+                    height: 250 !important;
                 }
             }
         }
