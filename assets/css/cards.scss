@@ -1,7 +1,6 @@
-$card-height: 380px;
+$card-height: 360px;
 
-  .main-cards {
-
+.main-cards {
     .card {
         height: $card-height;
         margin: 10px 0;
@@ -24,38 +23,48 @@ $card-height: 380px;
     }
 
     .les-cards-products {
-      max-width: 840px;
-      margin: 10px auto;
-      display: grid;
-      grid-auto-flow: dense;
-      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));  grid-gap: 1em;
+        max-width: 840px;
+        margin: 16px auto 40px;
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+        grid-gap: 1em;
 
-      .les-card-double {
-        grid-column-end: span 2;
-        background-size: cover;
-        height: $card-height;
-      }
+        .les-card-double {
+            grid-column-end: span 2;
+            height: $card-height;
+        }
 
-      .les-card-single {
-        background-size: cover;
-        height: $card-height;
-      }
+        .les-card-single {
+            height: $card-height;
+        }
+
+        .stamp-card {
+            position: absolute;
+        }
     }
+}
+@media (max-width: 360px) {
+    .main-cards {
+        .card-headline {
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 400;
+        }
 
-    @media (max-width: 360px) {
-      .les-cards-products {
-        margin: 10px 10%;
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));  grid-gap: 1em;
+        .les-cards-products {
+            margin: 10px 10%;
+            grid-gap: 1em;
 
-      }
+            .les-card-double {
+                grid-column-end: span 1;
+            }
 
-      .les-card-double {
-        height: $card-height;
-        grid-column-end: auto;
-      }
-
-      .les-card-single {
-        height: $card-height;
-      }
+            .les-card-single {
+                .img-fluid {
+                    height: $card-height - 38px !important;
+                }
+            }
+        }
     }
-  }
+}

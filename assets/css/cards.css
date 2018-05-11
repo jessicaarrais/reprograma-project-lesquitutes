@@ -1,5 +1,5 @@
 .main-cards .card {
-  height: 380px;
+  height: 360px;
   margin: 10px 0;
   z-index: -200;
 }
@@ -18,7 +18,7 @@
 }
 .main-cards .les-cards-products {
   max-width: 840px;
-  margin: 10px auto;
+  margin: 16px auto 40px;
   display: grid;
   grid-auto-flow: dense;
   grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
@@ -26,25 +26,30 @@
 }
 .main-cards .les-cards-products .les-card-double {
   grid-column-end: span 2;
-  background-size: cover;
-  height: 380px;
+  height: 360px;
 }
 .main-cards .les-cards-products .les-card-single {
-  background-size: cover;
-  height: 380px;
+  height: 360px;
 }
+.main-cards .les-cards-products .stamp-card {
+  position: absolute;
+}
+
 @media (max-width: 360px) {
+  .main-cards .card-headline {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+  }
   .main-cards .les-cards-products {
     margin: 10px 10%;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     grid-gap: 1em;
   }
-  .main-cards .les-card-double {
-    height: 380px;
-    grid-column-end: auto;
+  .main-cards .les-cards-products .les-card-double {
+    grid-column-end: span 1;
   }
-  .main-cards .les-card-single {
-    height: 380px;
+  .main-cards .les-cards-products .les-card-single .img-fluid {
+    height: 322px !important;
   }
 }
 

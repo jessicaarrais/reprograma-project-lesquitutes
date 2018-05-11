@@ -25,9 +25,17 @@ body {
 
   }
   .logo {
+    width: 100%;
     z-index: 500;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
   }
+  // Media query Navbar
+  @media (max-width: 360px) {
+    .logo {
+      width: 70%;
+    }
+  }
+
   .nav-link, .les-subitem {
     color: rgba(0,0,0,.5);
     height: 30px;
