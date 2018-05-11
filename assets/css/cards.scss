@@ -52,7 +52,7 @@ $card-height: 360px;
         }
     }
 }
-@media (max-width: 360px) {
+@media (max-width: 414px) {
     .main-cards {
         .card-headline {
             font-size: 14px;
@@ -62,8 +62,7 @@ $card-height: 360px;
 
         .les-cards-products {
             margin: 10px 5%;
-            grid-gap: 1em;
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
             grid-gap: 0.8em;
 
             .les-card-double {
@@ -81,6 +80,16 @@ $card-height: 360px;
                     height: 250 !important;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .main-cards {
+        .les-cards-products {
+            margin: 10px 5%;
+            grid-column-end: span 2;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         }
     }
 }
