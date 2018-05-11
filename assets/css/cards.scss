@@ -1,6 +1,10 @@
 $card-height: 360px;
 
 .main-cards {
+    h5.product-title {
+        margin-left: 10%;
+    }
+
     .card {
         height: $card-height;
         margin: 10px 0;
@@ -20,6 +24,10 @@ $card-height: 360px;
         line-height: 24px;
         font-weight: 300;
         color: #ffffff;
+    }
+
+    .text-shadow {
+        text-shadow: 1px 0 0 rgba(128,128,128,0.2), -1px 0 0 rgba(128,128,128,0.2), 0 1px 0 rgba(128,128,128,0.2), 0 -1px 0 rgba(128,128,128,0.2), 1px 1px rgba(128,128,128,0.2), -1px -1px 0 rgba(128,128,128,0.2), 1px -1px 0 rgba(128,128,128,0.2), -1px 1px 0 rgba(128,128,128,0.2);
     }
 
     .les-cards-products {

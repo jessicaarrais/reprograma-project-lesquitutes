@@ -26,36 +26,53 @@ function constructorHTML(categories, productType) {
         }
     }
 
-    let i = 0;
+    switch (productType) {
+        case 'cupcake':
+            document.querySelector('.product-title').textContent = 'Cupcakes';
+            break;
+        case'dessert':
+            document.querySelector('.product-title').textContent = 'Docinhos';
+            break;
+        case'souvenir':
+            document.querySelector('.product-title').textContent = 'Lembrancinhas';
+            break;
+        case'decorated':
+            document.querySelector('.product-title').textContent = 'Bolos decorados';
+            break;
+        case'naked-cake':
+            document.querySelector('.product-title').textContent = 'Naked Cake';
+            break;
+        case'american-pasta':
+            document.querySelector('.product-title').textContent = 'Pasta americana';
+            break;
+    }
+
     categories.filter(element => element.type === productType).forEach(element => {
         const divCard = document.createElement('div');
 
         if (element.brief !== '') {
-            i++;
             divCard.className = 'card les-card-double d-flex align-items-stretchs';
             divCard.innerHTML = `
-        <img class='img-fluid h-100' src=${element.src}>
-        <div class='card-body position-absolute w-50'>
-            <p class='card-text text-light card-headline'>${element.brief}</p>
-            <p class='card-text text-light card-tagline mb-0'>Tatiane Araújo</p>
-            <p class='card-text text-light card-tagline'>Instagram</p>
-            ${element.tags.map(tag => `<img class='stamp-card' src='${tag}'>`).join('')}
-        </div>
-        <div class='card-text bg-light'>
-            <p class='text-center mt-2 mb-2'>${element.description}</p>
-        </div>
-      `;
+            <img class='img-fluid h-100' src=${element.src}>
+            <div class='card-body position-absolute w-50'>
+                <p class='text-shadow card-text text-light card-headline'>${element.brief}</p>
+                ${element.tags.map(tag => `<img class='stamp-card' src='${tag}'>`).join('')}
+            </div>
+            <div class='card-text bg-light'>
+                <p class='text-center mt-2 mb-2'>${element.description}</p>
+            </div>
+          `;
         } else {
             divCard.className = 'card les-card-single d-flex align-items-stretch';
             divCard.innerHTML = `
-        <img class='img-fluid h-100' src=${element.src}>
-        <div class='card-body position-absolute w-50'>
-        ${element.tags.map(tag => `<img class='stamp-card' src='${tag}'>`).join('')}
-        </div>
-        <div class='card-text bg-light'>
-          <p class='text-center mt-2 mb-2'>${element.description}</p>
-        </div>
-      `;
+            <img class='img-fluid h-100' src=${element.src}>
+            <div class='card-body position-absolute w-50'>
+            ${element.tags.map(tag => `<img class='stamp-card' src='${tag}'>`).join('')}
+            </div>
+            <div class='card-text bg-light'>
+              <p class='text-center mt-2 mb-2'>${element.description}</p>
+            </div>
+            `;
         }
 
         divCardsProducts.appendChild(divCard);
