@@ -1,0 +1,138 @@
+.home-intro {
+    padding-top: 60px;
+
+    h1 {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+// primeira coluna - duas fotos 
+
+.title { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-corporativo { 
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin: 30px;
+
+    @media (max-width: 768px) {
+        padding: 0;
+        width: 100%;
+        margin: 30px 0;   
+    }
+
+    .column-two {
+        display: flex; 
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        padding: 30px auto;
+
+        @media (max-width: 768px) {
+            padding: 0;
+            justify-content: flex-start;
+            flex-direction: column;
+            width: 100%;
+        }
+        
+        .column-two-block { 
+            position: relative; //pelo amor de deus não deleta isso
+            margin: 2px;
+            box-shadow: 0 1px 4px 0 rgba(0,0,0,.25);
+            border-bottom: 2px solid #07D6A0;
+
+            @media (max-width: 768px) {
+                padding: 0;
+                justify-content: flex-start;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .column-two-img { 
+                width: 100%;
+            }
+            
+            .text-over { 
+                position: absolute; //pelo amor de deus não deleta isso
+                bottom: 8px;
+                left: 16px;
+            }            
+        }
+    }
+}
+
+// segunda coluna - três fotos 
+
+.column-three {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 150px;
+
+    @media (max-width:768px){
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0;
+        margin: 30px 0;
+        width: 100%;
+    }
+        
+    .three-block { 
+        position: relative; //pelo amor de deus não deleta isso
+        margin: 2px;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,.25);
+        border-bottom: 2px solid #07D6A0;
+        
+        @media (max-width:768px){
+            padding: 0;
+            width: 100%;
+        }
+
+        .column-three-img { 
+            width: 100%;
+            
+        }
+        .text-over { 
+            position: absolute; //pelo amor de deus não deleta isso
+            bottom: 8px;
+            left: 16px;
+        }            
+    }
+}
+
+// about
+.home-sobre {
+    background-color: rgba(239, 74, 129, 0.123);
+
+.img-perfil {
+    display: flex;
+    justify-content: flex-end;
+}
+@media (max-width:768px){
+    .img-perfil {
+    justify-content: center;
+
+    }
+}
+
+.logo-stack {
+    padding-left: -15px;
+
+    img {
+        height: 40px;
+        margin-right: 20px;
+    }
+}
+
+.text-over { 
+    bottom: 20px;
+    left: 20px;
+}
+}

@@ -1,0 +1,70 @@
+/* Media Styles
+---------------------------------------*/
+.quote {
+  border-left: 5px solid #cccccc;
+  padding-left: 15px;
+  width: 100%;
+  font-weight: 300; }
+  .quote p:first-child {
+    font-style: italic; }
+  .quote small {
+    font-size: 80%;
+    color: #777; }
+
+/* Revista Styles
+---------------------------------------*/
+.sobre-revista {
+  padding-top: 80px; }
+  .sobre-revista a {
+    color: #EF4A81; }
+
+/* GNT Styles
+---------------------------------------*/
+.sobre-gnt {
+  background-color: rgba(239, 74, 129, 0.123); }
+
+/* Coluna Styles
+---------------------------------------*/
+.sobre-coluna {
+  background-color: #27537B;
+  color: #ffffff; }
+
+.media-column-img {
+  display: flex;
+  justify-content: flex-end; }
+
+@media (max-width: 768px) {
+  .media-column-img {
+    justify-content: center; } }
+/* FAQ Styles
+---------------------------------------*/
+.sobre-faq {
+  padding: 50px 0; }
+  .sobre-faq .faq-container {
+    width: 600px;
+    margin: 20px;
+    display: block;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0; }
+    .sobre-faq .faq-container .box .bottom {
+      padding: 12px;
+      font-weight: 300;
+      color: #606060;
+      display: none; }
+    .sobre-faq .faq-container .box .top {
+      font-weight: 300;
+      padding: 12px;
+      border: #cccccc;
+      background-color: #FFFFFF;
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+      border-bottom: 1px solid #07D6A0;
+      color: #606060;
+      cursor: pointer; }
+
+@media (max-width: 768px) {
+  .sobre-faq .faq-container {
+    width: 100%; } }
+
+/*# sourceMappingURL=media.css.map */

@@ -1,69 +1,10 @@
-/* General Styles
----------------------------------------*/
-body {
-    margin: 0;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #606060;
-    background-color: #fafafa;
-}
-
-h2 {
-    margin: 10px 0;
-}
-
-h5 {
-    font-weight: 300;
-    margin-bottom: 10px;
-}
-
-section {
-    display: block;
-    margin: 0 auto;
-    padding: 20px 0;
-
-    .container {
-        width: 1000px;
-        padding: 20px 0;
-
-        .linha{
-            display: flex;
-            justify-content: center;
-            align-content: flex-start;
-
-            div{
-                width: 400px;
-                padding: 20px 20px;
-            }
-        }
-    }
-}
-
-@media (max-width: 768px) {
-section {
-    .container { 
-        width: 100%;
-
-            .linha {
-                justify-content: flex-start;
-                flex-direction: column;
-                
-                div{
-                    width: 100%;
-                    padding: 20px 0;
-                }
-            }
-        }
-    }
-}
-
 /* Media Styles
 ---------------------------------------*/
 .quote {
     border-left: 5px solid #cccccc;
     padding-left: 15px;
     width: 100%;
+    font-weight: 300;
 
    p:first-child {
         font-style: italic;
@@ -78,7 +19,7 @@ section {
 /* Revista Styles
 ---------------------------------------*/
 .sobre-revista {
-    background-color: #dddddd; 
+    padding-top: 80px;
 
     a { 
         color: #EF4A81;
@@ -87,12 +28,14 @@ section {
 
 /* GNT Styles
 ---------------------------------------*/
-
+.sobre-gnt {
+    background-color: rgba(239, 74, 129, 0.123);
+}
 
 /* Coluna Styles
 ---------------------------------------*/
 .sobre-coluna {
-    background-color: #666666; 
+    background-color: #27537B; 
     color: #ffffff;
 }
 
@@ -109,70 +52,46 @@ section {
 
 /* FAQ Styles
 ---------------------------------------*/
+.sobre-faq{
+    padding: 50px 0;
 
-/* Footer Styles
----------------------------------------*/
-
-footer {
-    width: 100%;
-    background-color: #27537B;
-    color: #ffffff;
-
-    ul {
-        margin: 0;
-        list-style-type: none;
-        text-align: left;
-    }
-
-    .footer-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        padding: 50px 0;
-    }
-
-    .btn-footer{
-        padding: 10px 25px;
-        margin-bottom: 30px;
-        background-color: #EF4A81;
-        color: #ffffff;
-        font-size: 12px;
-        font-weight: 300;
-        text-transform: uppercase;
-        border: 0;
-        border-radius: 4px;
-        
-    }
-
-    .social-media{
-        display: flex;
-        justify-content: center;
+    .faq-container {
+        width: 600px;
+        margin: 20px;
+        display: block;
+        align-content: center;
         align-items: center;
+        margin: 0 auto;
+        padding: 20px 0;
 
-        img {
-            height: 30px;
-            padding: 0 10px;
+        .box {
+            .bottom {
+                padding: 12px;
+                font-weight: 300;
+                color: #606060;
+                display: none;
+            }
+
+        .top {
+            font-weight: 300;
+            padding: 12px;
+            border: #cccccc;
+            background-color: #FFFFFF;
+            box-shadow: 0 1px 4px 0 rgba(0,0,0,.05);
+            border-bottom: 1px solid #07D6A0;
+            color: #606060;
+            cursor: pointer;
+            }
         }
     }
-
-}
-
-.footnote{
-    text-align: center;
-    background-color: #14365C;
-    width: 100%;
-    margin: 0;
-    padding: 10px 0;
-    font-size: 12px;
-    color: #27537B;
 }
 
 @media (max-width: 768px) {
-    footer {
-        .footer-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+    .sobre-faq {
+        
+    .faq-container {
+        width: 100%;
     }
+}
+
 }

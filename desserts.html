@@ -1,90 +1,127 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/desserts.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/cards.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/desserts.css" />
-  
 
-  <title>les Quitutes - Doces</title>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/desserts.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/cards.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/products.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>les Quitutes - Doces</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light position-fixed w-100">
-      <a class="navbar-brand position-absolute width-90" href="home.html"><img class="logo rounded-circle w-100" src="LOGO-LESQUITUTES.png" alt=""></a>
+    <nav class="navbar navbar-expand-md navbar-light bg-light position-fixed w-100">
+        <a class="navbar-brand position-absolute width-90" href="index.html">
+            <img class="logo rounded-circle w-100" src="./assets/img/logo.jpg" alt="">
+        </a>
 
-      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse p-2" id="navbarToggler">
-        <ul class="navbar-nav my-auto ml-auto mt-2 mt-lg-0">
-          <li class="nav-item mx-auto px-3 active">
-            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item mx-auto px-3">
-            <a class="nav-link button-category mx-auto px-3" href="cakes.html" type="button" name="cakes" onclick="onClickCategory(this.name)">Bolos</a>
-          </li>
-          <li class="nav-item button-category mx-auto px-3">
-            <a class="nav-link" href="desserts.html" type="button" name="desserts" onclick="onClickCategory(this.name)">Doces</a>
-          </li>
-          <li class="nav-item mx-auto px-3">
-            <a class="nav-link" href="media.html">Sobre nós</a>
-          </li>
-        </ul>  
-      </div>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse p-2" id="navbarToggler">
+            <ul class="navbar-nav my-auto ml-auto mt-2 mt-lg-0">
+                <li class="nav-item mx-auto px-3">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item mx-auto px-3">
+                    <a class="nav-link mx-auto px-3" href="cakes.html" name="cakes">Bolos
+                    </a>
+                </li>
+                <li class="nav-item mx-auto px-3">
+                    <a class="nav-link" href="desserts.html" name="desserts"><span style="color:#EF4A81">
+                            <strong>Doces</strong>
+                        </span></a>
+                </li>
+                <li class="nav-item mx-auto px-3">
+                    <a class="nav-link" href="media.html">
+                        Sobre
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <a class="btn btn-outline-danger position-absolute position-fixed" href="#footer">Dúvidas e encomendas</span></a>
-
 
     <!-- EXEMPLO DE HEADER MAS PODE USAR OUTRA! -->
     <header class="container-fluid px-0">
-      <div>
-        <img class="img-fluid w-100" src="http://via.placeholder.com/200x100" alt="">
-        <h1 class="les-title position-absolute text-light">Doces</h1>
-      </div>
+        <div>
+            <img class="img-fluid w-100" src="./assets/img/img-header-desserts.jpg" alt="">
+            <!-- <h1 class="les-title position-absolute">Doces</h1> -->
+        </div>
     </header>
 
-        <!-- Submenu -->
-        <div class="container my-3 les-submenu">
-            <div class="row justify-content-md-center">
-              <a class="button-product-type mx-auto les-subitem les-red-item active" type="button" value="desserts-array" name="cupcake" onclick="onClickProductType(this.value, this.name)">Cupcakes</a>
-              <a class="button-product-type mx-auto les-subitem les-yellow-item"  type="button" value="desserts-array" name="dessert" onclick="onClickProductType(this.value, this.name)">Docinhos</a>
-              <a class="button-product-type mx-auto les-subitem les-green-item"  type="button" value="desserts-array" name="souvenir" onclick="onClickProductType(this.value, this.name)">Lembrancinhas</a>
-            </div>
-          </div>
-
-
-  <button class="button-category" type="button" name="cakes" onclick="onClickCategory(this.name)">
-    Bolos
-  </button>
-  <button class="button-category" type="button" name="desserts" onclick="onClickCategory(this.name)">
-    Doces
-  </button>
-
-  <button class="button-product-type" type="button" value="desserts-array" name="cupcake" onclick="onClickProductType(this.value, this.name)">
-    Cupcakes
-  </button>
-
-  <button class="button-product-type" type="button" value="desserts-array" name="dessert" onclick="onClickProductType(this.value, this.name)">
-    Doces
-  </button>
-
-  <button class="button-product-type" type="button" value="desserts-array" name="souvenir" onclick="onClickProductType(this.value, this.name)">Lembrancinhas</button>
-
-  <div class="main-cards">
-    <div class="les-cards-products">
-      <!-- constructor of cards' logic in javascript cakes.js and main.js -->
+    <!-- Submenu -->
+    <div class="container my-3 les-submenu">
+        <div class="row justify-content-md-center">
+            <button class="button-product-type mx-auto les-subitem les-red-item active" type="button" value="desserts-array" name="cupcake"
+                onclick="onClickProductType(this.value, this.name)">Cupcakes</button>
+            <button class="button-product-type mx-auto les-subitem les-yellow-item" type="button" value="desserts-array" name="dessert"
+                onclick="onClickProductType(this.value, this.name)">Docinhos</button>
+            <button class="button-product-type mx-auto les-subitem les-green-item" type="button" value="desserts-array" name="souvenir"
+                onclick="onClickProductType(this.value, this.name)">Lembrancinhas</button>
+        </div>
     </div>
-  </div>
 
-  <script src="assets/js/productsDB.js" charset="utf-8"></script>
-  <script src="assets/js/main.js" charset="utf-8"></script>
-  <script src="assets/js/desserts.js" charset="utf-8"></script>
+    <div class="main-cards">
+        <h5 class="product-title">
+            <!-- javascript -->
+        </h5>
+        <div class="les-cards-products">
+            <!-- constructor of cards' logic in javascript cakes.js and main.js -->
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h5>
+                    <strong>Les Quitutes Confeitaria</strong>
+                </h5>
+                <p>Alto de Pinheiros - SP
+                    <br>Atendemos em São Paulo e região
+                </p>
+                <small>Horário de atendimento
+                    <br>9 - 18h de Segunda a Sexta-feira</small>
+            </div>
+            <div class="logo-footer">
+                <img src="./assets/img/logo-white.png" alt="Logo Les Quitutes">
+            </div>
+            <div>
+                <h5>Entre em contato conosco</h5>
+                <button class="btn-primario">Dúvidas e encomendas</button>
+                <h5>Redes Sociais</h5>
+                <div class="social-media">
+                    <a target="_blank" href="https://www.facebook.com/LesQuitutes/">
+                        <img src="./assets/img/fb-icon.png" alt="link facebook">
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/lesquitutes/">
+                        <img src="./assets/img/insta-icon.png" alt="link instagram">
+                    </a>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=5511984560306&text=Olá,%20Luciana%20!%20Podemos%20conversar%20?">
+                        <img src="./assets/img/whats-icon.png" alt="link whatsapp">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <p class="footnote">Creative Commons 2018 | Feito com amor por Reprograma</p>
+
+    <script src="assets/js/productsDB.js" charset="utf-8"></script>
+    <script src="assets/js/main.js" charset="utf-8"></script>
+    <script src="assets/js/desserts.js" charset="utf-8"></script>
 </body>
+
 </html>

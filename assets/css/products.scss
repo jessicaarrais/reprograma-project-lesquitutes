@@ -1,0 +1,90 @@
+$les-red:#ef476e;
+$les-yellow: #ffd166;
+$les-green: #07d6a0;
+$les-blue: #27587b;
+
+body {
+  background-color: #fafafa;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0;
+  min-height: 100%;
+  box-sizing: border-box;
+
+  // Navigation bar
+  .navbar {
+      z-index: 499;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
+  }
+  .navbar-brand {
+    top: 10px;
+    width: 90px;
+
+  }
+  .logo {
+    width: 100%;
+    z-index: 500;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
+  }
+  // Media query Navbar
+  @media (max-width: 360px) {
+    .logo {
+      width: 70%;
+    }
+  }
+
+  .nav-link, .les-subitem {
+    color: rgba(0,0,0,.5);
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+  }
+  // ________________________________________
+
+  // Submenu
+
+  button.les-red-item {
+    border-style: none;
+    background: none;
+    border-bottom:2px solid $les-red;
+  }
+  button.les-yellow-item {
+    border-style: none;
+    background: none;
+    border-bottom:2px solid $les-yellow;
+  }
+  button.les-green-item {
+    border-style: none;
+    background: none;
+    border-bottom:2px solid $les-green;
+  }
+
+  .les-subitem:hover {
+    text-decoration: none;
+    color: rgba(0,0,0,.7);
+  }
+
+  .les-subitem:active {
+    color: rgba(0,0,0,.9);
+    font-weight: bolder;
+  }
+
+  .les-submenu a.active {
+    color: black;
+    font-weight: bolder;
+  }
+  // ________________________________________
+
+  // Exemplo de header -- PODE MUDAR --
+  .les-title {
+    top: 335px;
+    left: 50px;
+    z-index: 0;
+    text-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
+  }
+
+}

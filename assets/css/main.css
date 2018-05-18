@@ -1,0 +1,198 @@
+/* General Styles
+---------------------------------------*/
+body {
+  margin: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #606060;
+  background-color: #fafafa;
+  box-sizing: border-box; }
+
+h1 {
+  font-weight: 300;
+  text-align: left;
+  padding-bottom: 30px; }
+
+h2 {
+  font-weight: 300;
+  margin: 10px 0;
+  text-align: center; }
+
+h3 {
+  font-weight: 300;
+  font-size: 24px;
+  margin: 10px 0; }
+
+h5 {
+  font-weight: 300;
+  margin-bottom: 10px; }
+
+section {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0; }
+  section .container {
+    width: 1000px;
+    padding: 20px 0; }
+    section .container .linha {
+      display: flex;
+      justify-content: center;
+      align-content: flex-start; }
+      section .container .linha div {
+        width: 400px;
+        padding: 20px 20px; }
+
+@media (max-width: 768px) {
+  section {
+    padding: 0 10px; }
+    section .container {
+      width: 100%; }
+      section .container .linha {
+        justify-content: flex-start;
+        flex-direction: column; }
+        section .container .linha div {
+          width: 100%;
+          padding: 20px 0; } }
+button {
+  cursor: pointer; }
+
+.quote {
+  border-left: 5px solid #cccccc;
+  padding-left: 15px;
+  width: 100%;
+  font-weight: 300; }
+  .quote p:first-child {
+    font-style: italic; }
+  .quote small {
+    font-size: 80%;
+    color: #777; }
+
+.btn-primario {
+  padding: 10px 25px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  background-color: #EF4A81;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 4px; }
+
+.btn-primario-lg {
+  padding: 15px 30px;
+  margin-bottom: 30px;
+  background-color: #EF4A81;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 4px; }
+
+/* Nav Styles
+---------------------------------------*/
+.navbar {
+  border-top: 1px solid #07D6A0;
+  z-index: 99;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05); }
+
+.navbar-brand {
+  top: 10px;
+  width: 90px; }
+
+.logo {
+  width: 100%;
+  z-index: 500;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05); }
+  @media (max-width: 768px) {
+    .logo {
+      width: 75%; } }
+
+.nav-link, .les-subitem {
+  color: rgba(0, 0, 0, 0.5);
+  height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px; }
+
+.btn-outline-danger {
+  top: 177px;
+  right: 20px;
+  font-size: smaller;
+  color: #fff;
+  background-color: #ef476e;
+  border-color: #ef476e; }
+
+.btn-outline-danger:hover {
+  font-weight: 500;
+  background-color: #ef476e;
+  border-color: #ffd166; }
+
+/* Footer Styles
+---------------------------------------*/
+footer {
+  width: 100%;
+  background-color: #27537B;
+  color: #ffffff;
+  border-top: 1px solid #EF4A81; }
+  footer ul {
+    margin: 0;
+    list-style-type: none;
+    text-align: left; }
+  footer .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 0; }
+    @media (max-width: 768px) {
+      footer .footer-container {
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center; } }
+    footer .footer-container div .social-media {
+      display: inline;
+      justify-content: center;
+      align-items: center; }
+      @media (max-width: 768px) {
+        footer .footer-container div .social-media {
+          display: inline;
+          padding: 5px 10px; } }
+      footer .footer-container div .social-media img {
+        width: 50px;
+        padding-right: 10px; }
+    @media (max-width: 768px) {
+      footer .footer-container div {
+        display: grid;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        text-align: center; } }
+    footer .footer-container .logo-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      @media (max-width: 768px) {
+        footer .footer-container .logo-footer {
+          padding: 20px 0; } }
+
+.footnote {
+  text-align: center;
+  font-weight: 400;
+  background-color: #14365C;
+  width: 100%;
+  margin: 0;
+  padding: 7px 0;
+  font-size: 12px;
+  color: #27537B; }
+
+@media (max-width: 768px) {
+  footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; } }
+
+/*# sourceMappingURL=main.css.map */

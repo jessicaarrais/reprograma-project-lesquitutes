@@ -12,32 +12,64 @@
     />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/media.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
     <script src="assets/js/main.js"></script>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light position-fixed w-100">
+        <a class="navbar-brand position-absolute width-90" href="index.html">
+            <img class="logo rounded-circle w-100" src="./assets/img/logo.jpg" alt="">
+        </a>
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse p-2" id="navbarToggler">
+            <ul class="navbar-nav my-auto ml-auto mt-2 mt-lg-0">
+                <li class="nav-item mx-auto px-3">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item mx-auto px-3">
+                    <a class="nav-link mx-auto px-3" href="cakes.html" name="cakes">Bolos
+                    </a>
+                </li>
+                <li class="nav-item mx-auto px-3">
+                    <a class="nav-link" href="desserts.html" name="desserts">Doces</a>
+                </li>
+                <li class="nav-item mx-auto px-3">
+                    <a class="nav-link" href="media.html">
+                        <span style="color:#EF4A81">
+                            <strong>Sobre</strong>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <section class="sobre-revista">
         <div class="container">
-            <h2>Conheça</h2>
+            <h2>Conheça a Les Quitutes</h2>
             <div class="linha">
                 <div>
                     <img src="./assets/img/luciana.jpg" alt="luciana about" class="luciana-img">
                 </div>
                 <div>
                     <p class="quote">
-                        A confeiteira Luciana Elias sempre quis trabalhar com doces, mas apenas há um ano conseguiu fazer do sonho, realidade. “Passei
-                        11 anos trabalhando na Cultura Inglesa, primeiro como professora e depois como gerente de filial.
-                        Chegou um momento em que percebi que não estava mais conseguindo conciliar aquela carga horária pesada
-                        com a vida pessoal”, diz Lu. A princípio, a família achou loucura a mudança repentina, mas hoje o
-                        marido, Fábio, e a filha Carol apoiam e servem de cobaia para as criações.
-                        <br> Os bolos, antes feitos apenas para aniversários na família, viraram o carro-chefe e os campeões
-                        de vendas. Destaque para o red velvet, que virou uma linha à parte.
+                        A confeiteira Luciana Elias sempre foi incentivada pela filha e pelo marido a trabalhar com doces. Após decidir deixar a
+                        vida corporativa para trás, conseguiu fazer do sonho, realidade. Se especializou com diversos cursos
+                        na área de confeitaria e, aos poucos, os bolos e doces que antes eram feitos apenas para comemorações
+                        em família, viraram o carro-chefe e os campeões de vendas. Destaque para o seu Red Velvet, bolo tradicional
+                        americano muito macio e saboroso, com um sabor leve de cream cheese no recheio. Sua versão de Red
+                        Velvet Cheesecake foi a vencedora do melhor cartão de visitas no programa “Que Seja Doce”.
                     </p>
                     <small>
                         – CAROLINA ESQUILANTE, Doceiras: Revista Prazeres da Mesa
                     </small>
                     <div>
-                        <a href="#">Ler artigo completo</a>
+                        <a target="_blank" href="prazeres_da_mesa.pdf">Ler artigo completo</a>
                     </div>
                 </div>
             </div>
@@ -45,6 +77,7 @@
     </section>
     <section class="sobre-gnt">
         <div class="container">
+            <h2>Les Quitutes na Midia</h2>
             <div class="linha">
                 <div class="embed-video-gnt">
                     <a href="https://ok.ru/videoembed/978405690032?autoplay=1">
@@ -77,68 +110,109 @@
             </div>
         </div>
     </section>
-    <section>
-        <h2>perguntas frequentes</h2>
-<div class="container">
-        <div class="box">
-            <div class="top">
-                pergunta
+    <section class="sobre-faq">
+        <h2>Perguntas frequentes</h2>
+        <div class="faq-container">
+            <div class="box">
+                <div class="top">
+                    Como faço o meu pedido?
+                </div>
+                <div class="bottom">
+                    Você pode enviar mensagem por email, whatsapp ou telefonar que combinaremos todos os detalhes do seu pedido. Responderemos
+                    dentro do nosso horário comercial (2ª a 6ª, das 9:00 às 18:00).
+                </div>
             </div>
-            <div class="bottom">
-                resposta
+            <div class="box">
+                <div class="top">
+                    Com quanta antecedência preciso encomendar?
+                </div>
+                <div class="bottom">
+                    Para pedidos de bolos sem decoração em pasta americana, 5 dias de antecedência. Para bolos e doces decorados ou personalizados,
+                    produções de festas e eventos, precisamos de pelo menos 10 dias de antecedência.
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    Onde encontro as opções de bolos, doces e valores?
+                </div>
+                <div class="bottom">
+                    Entre em contato com a gente por email ou whatsapp que enviaremos uma tabela com todas as informações. Trabalhamos com muitos
+                    itens personalizados, então se você estiver procurando por algo diferente, é só entrar em contato que
+                    faremos o máximo para atender ao seu pedido.
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    Vocês trabalham com decorações em pasta americana e personalizações?
+                </div>
+                <div class="bottom">
+                    Trabalhamos com pasta americana e coberturas como buttercream e ganache. Seus bolos, doces e lembrancinhas podem ser personalizados
+                    com o logotipo da sua empresa ou o tema da festa com toppers, tags, adesivos personalizados ou papel
+                    arroz. Entre em contato e juntos podemos escolher a melhor maneira de deixar a sua festa ou evento da
+                    maneira que você gostaria!
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    Como faço o pagamento?
+                </div>
+                <div class="bottom">
+                    O pagamento pode ser feito através de depósito bancário (Itaú) ou link para pagamento via Pagseguro por cartão de crédito.
+                    Em ambos os casos, é necessário fazer o pagamento no ato da encomenda para reservar a agenda para a produção
+                    do seu pedido.
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    Sobre retirada ou entrega
+                </div>
+                <div class="bottom">
+                    Sua encomenda pode ser retirada aqui, em Alto de Pinheiros (SP/capital), com horário marcado. Caso leve no seu carro, o bolo
+                    precisa ser colocado em um lugar plano, para evitar que deslize. Para bolos muito grandes ou de andares,
+                    sugerimos estar em 2 pessoas. Se preferir, temos motoristas cadastrados que podem fazer a sua entrega
+                    mediante pagamento de frete de acordo com o endereço da entrega. Não recomendamos o transporte com moto.
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    Como armazeno o meu produto até a hora de consumir?
+                </div>
+                <div class="bottom">
+                    Os bolos e doces em pasta americana, devem ficar em temperatura ambiente, de preferência em um local fresco (não podem ser
+                    colocados em geladeira). Chocolates e docinhos enrolados (brigadeiros, etc.) também devem permanecer
+                    fora da geladeira, em local fresco e arejado. Bolos e cupcakes podem ir à geladeira em dias de muito
+                    calor. Para que voltem à consistência ideal para consumo, é só retirar da geladeira algumas horas antes
+                    de consumir.
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    Qual a validade dos produtos?
+                </div>
+                <div class="bottom">
+                    Nossos produtos são artesanais e levam ingredientes de alta qualidade. Não trabalhamos com nenhum tipo de conservante. Nossa
+                    sugestão de consumo é de 4 dias para bolos e cupcakes (sem frutas), 10 dias para brownies, cookies e
+                    pães de mel, e de 2 dias para docinhos como brigadeiro ou bolos e doces com frutas frescas.
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    Realizam emissão de nota fiscal?
+                </div>
+                <div class="bottom">
+                    Sim, podemos emitir nota fiscal para a sua empresa.
+                </div>
             </div>
         </div>
-        <div class="box">
-            <div class="top">
-                pergunta 
-            </div>
-            <div class="bottom">
-                resposta
-            </div>
-        </div>
-        <div class="box">
-            <div class="top">
-                pergunta 
-            </div>
-            <div class="bottom">
-                resposta
-            </div>
-        </div>
-    </div>
-    <style>
-        .container .box {
-            float: left;
-            width: 150px;
-            margin: 20px;
-        }
-
-        .container .box .top {
-            padding: 12px;
-            /* background-color: blue; */
-            color: black;
-            cursor: pointer;
-        }
-
-        .container .box .bottom {
-            padding: 12px;
-            /* background-color: red; */
-            color: black;
-            display: none;
-        }
-    </style>
-    <script>
-        $('.top').on('click', function () {
-            $parent_box = $(this).closest('.box');
-            $parent_box.siblings().find('.bottom').slideUp();
-            $parent_box.find('.bottom').slideToggle(1000, 'swing');
-        });
-    </script>    
     </section>
     <footer>
         <div class="footer-container">
             <div>
-                <h5>Les Quitutes Confeitaria</h5>
-                <p>Vila Leopoldina - SP<br>Atendemos em São Paulo e região
+                <h5>
+                    <strong>Les Quitutes Confeitaria</strong>
+                </h5>
+                <p>Alto de Pinheiros - SP
+                    <br>Atendemos em São Paulo e região
                 </p>
                 <small>Horário de atendimento
                     <br>9 - 18h de Segunda a Sexta-feira</small>
@@ -147,20 +221,34 @@
                 <img src="./assets/img/logo-white.png" alt="Logo Les Quitutes">
             </div>
             <div>
-                    <h5>Entre em contato conosco</h5>
-                <button class="btn-footer">Dúvidas e encomendas</button>
+                <h5>Entre em contato conosco</h5>
+                <button class="btn-primario">Dúvidas e encomendas</button>
                 <h5>Redes Sociais</h5>
                 <div class="social-media">
-                    <img src="./assets/img/fb-icon.png" alt="link facebook">
-                    <img src="./assets/img/insta-icon.png" alt="link instagram">
-                    <img src="./assets/img/whats-icon.png" alt="link whatsapp">
+                    <a target="_blank" href="https://www.facebook.com/LesQuitutes/">
+                        <img src="./assets/img/fb-icon.png" alt="link facebook">
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/lesquitutes/">
+                        <img src="./assets/img/insta-icon.png" alt="link instagram">
+                    </a>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=5511984560306&text=Olá,%20Luciana%20!%20Podemos%20conversar%20?">
+                        <img src="./assets/img/whats-icon.png" alt="link whatsapp">
+                    </a>
                 </div>
             </div>
         </div>
-
     </footer>
     <p class="footnote">Creative Commons 2018 | Feito com amor por Reprograma</p>
+
     <!-- jQuery library -->
+    <script>
+        $('.top').on('click', function () {
+            $parent_box = $(this).closest('.box');
+            $parent_box.siblings().find('.bottom').slideUp();
+            $parent_box.find('.bottom').slideToggle(1000, 'swing');
+        });
+    </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Popper JS -->
