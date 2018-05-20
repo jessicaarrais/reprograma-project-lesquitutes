@@ -5,6 +5,13 @@ $les-yellow: #ffd166;
 $les-green: #07d6a0;
 $les-blue: #27587b;
 
+*{
+    a:hover {
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
 body {
     margin: 0;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -12,7 +19,7 @@ body {
     line-height: 1.5;
     color: #606060;
     background-color: #fafafa;
-    box-sizing: border-box;
+
 }
 
 h1 {
@@ -25,15 +32,12 @@ h2 {
     font-weight: 300;
     margin: 10px 0;
     text-align: center;
-
-
 }
 
 h3 {
     font-weight: 300;
     font-size: 24px;
     margin: 10px 0;
-
 }
 
 h5 {
@@ -41,10 +45,15 @@ h5 {
     margin-bottom: 10px;
 }
 
+
 section {
     display: block;
     margin: 0 auto;
     padding: 20px 0;
+
+    @media (max-width: 768px) {
+            padding: 0 10px;
+        }
 
     .container {
         width: 1000px;
@@ -60,14 +69,8 @@ section {
                 padding: 20px 20px;
             }
         }
-    }
-}
 
-@media (max-width: 768px) {
-section {
-    padding: 0 10px;
-
-    .container { 
+    @media (max-width: 768px) {
         width: 100%;
 
             .linha {
@@ -82,6 +85,7 @@ section {
         }
     }
 }
+
 
 button{
     cursor: pointer;
@@ -105,8 +109,7 @@ button{
 
 .btn-primario{
     padding: 10px 25px;
-    margin-bottom: 30px;
-    margin-top: 15px;
+    margin-bottom: 20px;
     background-color: #EF4A81;
     color: #ffffff;
     font-size: 12px;
@@ -114,6 +117,7 @@ button{
     text-transform: uppercase;
     border: 0;
     border-radius: 4px;
+    display: block;
 }
 
 .btn-primario-lg{
@@ -181,7 +185,7 @@ button{
 ---------------------------------------*/
 footer {
     width: 100%;
-    background-color: #27537B;
+    background-color: #7e6363;
     color: #ffffff;
     border-top: 1px solid #EF4A81;
 
@@ -191,6 +195,11 @@ footer {
         text-align: left;
     }
 
+    h2{
+        margin: 0;
+        padding-bottom: 20px; 
+    }
+    
     .footer-container {
         display: flex;
         justify-content: space-around;
@@ -235,6 +244,12 @@ footer {
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 100px;
+
+            img {
+                width: 100%;
+                
+            }
             
             @media (max-width:768px) { 
                 padding: 20px 0;
@@ -247,12 +262,12 @@ footer {
 .footnote{
     text-align: center;
     font-weight: 400;
-    background-color: #14365C;
+    background-color: #675151;
     width: 100%;
     margin: 0;
     padding: 7px 0;
     font-size: 12px;
-    color: #27537B;
+    color: #ffffff50;
 }
 
 @media (max-width: 768px) {

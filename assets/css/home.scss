@@ -114,13 +114,12 @@
 .img-perfil {
     display: flex;
     justify-content: flex-end;
-}
-@media (max-width:768px){
-    .img-perfil {
-    justify-content: center;
 
+    @media (max-width:768px){
+        justify-content: center;
     }
 }
+
 
 .logo-stack {
     padding-left: -15px;
